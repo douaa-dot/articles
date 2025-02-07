@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+   
+
+</head>
+<body>
+    <style>/* Style du header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-bottom: 2px solid #ddd;
+            padding: 10px 20px;
+          }
+          
+          nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          nav li {
+            margin: 0 15px;
+          }
+          
+          nav a {
+            color: white;
+            background: black;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          
+          nav a:hover {
+            color:yellow;
+            text-decoration: underline;
+          }
+          
+          /* Mise en page des articles */
+          .articles {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px;
+          }
+          
+          article {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 15px;
+            width: 30%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            transition: border 0.3s;
+          }
+          
+          article:hover {
+            border-color: yellow;
+          }
+          
+          article button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+          }
+          
+          /* Style du formulaire */
+          .formulaire {
+            background: #f9f9f9;
+            padding: 20px;
+            max-width: 300px;
+            margin: 20px auto;
+            border: 2px solid #ddd;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          label {
+            margin-bottom: 5px;
+          }
+          
+          input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          }
+          
+          button[type="submit"] {
+            background: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          /* Style du footer */
+          footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+          }</style>
+    <!-- Contenu va ici -->
+    <header>
+        <div class="logo">
+            <h1>Mon Site</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="connexion-btn">Se connecter</button>
+        </nav>
+    </header>
+    <main>
+        <section class="articles">
+            <article>
+                <h2>Titre de l'article 1</h2>
+                <p>Description de l'article 1.</p>
+                <button>Lire plus</button>
+            </article>
+            <article>
+                <h2>Titre de l'article 2</h2>
+                <p>Description de l'article 2.</p>
+                <button>Lire plus</button>
+            </article>
+            <article>
+                <h2>Titre de l'article 3</h2>
+                <p>Description de l'article 3.</p>
+                <button>Lire plus</button>
+            </article>
+        </section>
+    </main>
+    <section class="formulaire">
+        <form action="#">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Mon Site. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
